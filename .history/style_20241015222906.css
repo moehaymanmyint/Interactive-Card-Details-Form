@@ -1,0 +1,25 @@
+.container{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.left-container,
+.right-container {
+    margin: 20px;
+}
+
+.left-container{
+    background-color: red;
+    padding: 25px;
+}
+
+.left-container .number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.left-container .date{
+    color: blue;
+}

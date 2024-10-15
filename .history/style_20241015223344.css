@@ -1,0 +1,29 @@
+.container{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.left-container,
+.right-container {
+    margin: 20px;
+}
+
+.left-container{
+    background-color: rgb(5, 29, 107);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.left-container .number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.right-container div{
+    margin: 15px 0;
+     
+}
+

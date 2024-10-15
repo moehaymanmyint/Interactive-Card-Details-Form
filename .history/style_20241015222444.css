@@ -1,0 +1,10 @@
+.container{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+.left-container,
+.right-container {
+    margin: 20px;
+}

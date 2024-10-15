@@ -1,0 +1,52 @@
+.container{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.left-container,
+.right-container {
+    margin: 20px 50px;
+    width: 50%;
+}
+
+.front-card{
+    background-color: rgb(5, 29, 107);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    height: 120px;
+    margin: 20px 80px;
+}
+
+.front-card .number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.back-card{
+    height: 120px;
+    background-color: gainsboro;
+    margin: 20px 60px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.right-container div{
+    margin: 15px 0;  
+}
+.right-container input{
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.confirm-btn{
+    background-color: rgb(5, 29, 107);
+    color: white;
+    width: 100%;
+}
+
