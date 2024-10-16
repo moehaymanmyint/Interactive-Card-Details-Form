@@ -1,9 +1,8 @@
 .container{
+    background-color: skyblue;
     display: flex;
     justify-content: center;
-    margin: 80px;
-    background-color: skyblue;
-    border-radius: 10px;
+    margin: 20px;
 }
 
 .left-container,
@@ -12,29 +11,23 @@
     width: 50%;
 }
 
-.right-container{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
 .front-card{
     background-color: rgb(5, 29, 107);
     color: white;
     padding: 25px;
     border-radius: 10px;
-    height: 150px;
-    width: 340px;
+    height: 120px;
+    width: 250px;
     margin: 20px 80px;
 }
 
 .front-card .number{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .back-card img{
-    width: 400px;
+    width: 300px;
     margin: 20px 40px;
     border-radius: 10px;
     margin-left: 120px;
@@ -43,53 +36,51 @@
 .right-container div{
     margin: 15px 0;  
 }
-
-.card-input {
-    width: 100%; 
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
-    box-sizing: border-box; 
-}
-
-.card-date {
-    width: 45%; 
-    margin-top: 5px;
-    margin-right: 5px;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-.card-cvc {
-    width: 100%; 
+.right-container .card-input,
+.btn{
     margin-top: 5px;
     border: none;
     padding: 10px;
     border-radius: 8px;
-    box-sizing: border-box;
+    width: 80%;
 }
 
-.confirm-btn {
-    width: 100%;
+.btn{
+    margin-top: 5px;
+    border: none;
     padding: 10px;
     border-radius: 8px;
-    border: none;
+    width: 80%;
+}
+
+.confirm-btn{
     background-color: rgb(5, 29, 107);
-    font-size: 20px;
     color: white;
-    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
-.card-info {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-name,
-.card-number,
 .card-info{
-    padding-bottom: 12px;
+    display: flex;
+    justify-content: start;
+}
+
+.card-date{
+    margin-top: 5px;
+    margin-right: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.card-cvc{
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
 }
 

@@ -1,9 +1,8 @@
 .container{
+    background-color: skyblue;
     display: flex;
     justify-content: center;
-    margin: 80px;
-    background-color: skyblue;
-    border-radius: 10px;
+    margin: 20px;
 }
 
 .left-container,
@@ -12,29 +11,24 @@
     width: 50%;
 }
 
-.right-container{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
 .front-card{
     background-color: rgb(5, 29, 107);
     color: white;
     padding: 25px;
     border-radius: 10px;
-    height: 150px;
-    width: 340px;
+    height: 140px;
+    width: 300px;
     margin: 20px 80px;
 }
 
 .front-card .number{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
+    
 }
 
 .back-card img{
-    width: 400px;
+    width: 350px;
     margin: 20px 40px;
     border-radius: 10px;
     margin-left: 120px;
@@ -84,12 +78,7 @@
 
 .card-info {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.card-name,
-.card-number,
-.card-info{
-    padding-bottom: 12px;
+    justify-content: space-between;
+    gap: 10px;
 }
 

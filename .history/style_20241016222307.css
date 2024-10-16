@@ -1,0 +1,127 @@
+.container{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.left-container,
+.right-container {
+    margin: 20px 50px;
+    width: 50%;
+}
+
+.front-card{
+    background-color: rgb(5, 29, 107);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    height: 120px;
+    width: 250px;
+    margin: 20px 80px;
+}
+
+.front-card .number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.back-card img{
+    width: 300px;
+    margin: 20px 40px;
+    border-radius: 10px;
+    margin-left: 120px;
+}
+
+.right-container div{
+    margin: 15px 0;  
+}
+.right-container .card-input{
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.confirm-btn{
+    background-color: rgb(5, 29, 107);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.card-info{
+    display: flex;
+    justify-content: start;
+}
+
+.card-date{
+    margin-top: 5px;
+    margin-right: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.card-cvc{
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card-input {
+    width: 100%; /* Adjusts input width to fill available space */
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.card-date {
+    width: 45%; /* Adjusts width of date input fields (for MM and YY) */
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card-cvc {
+    width: 100%; /* Adjusts input width for CVC */
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.confirm-btn {
+    width: 100%; /* Full width for the confirm button */
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333; /* Add any desired background color */
+    color: white;
+    cursor: pointer;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add spacing between MM/YY and CVC inputs */
+}
+
+

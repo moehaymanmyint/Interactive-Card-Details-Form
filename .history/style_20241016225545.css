@@ -1,9 +1,8 @@
 .container{
+    background-color: skyblue;
     display: flex;
     justify-content: center;
-    margin: 80px;
-    background-color: skyblue;
-    border-radius: 10px;
+    margin: 20px;
 }
 
 .left-container,
@@ -29,7 +28,7 @@
 }
 
 .front-card .number{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -85,11 +84,5 @@
 .card-info {
     display: flex;
     justify-content: space-evenly;
-}
-
-.card-name,
-.card-number,
-.card-info{
-    padding-bottom: 12px;
 }
 
