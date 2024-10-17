@@ -14,11 +14,10 @@ let dateError = document.querySelector(".date-error");
 
 function getData(event){
     event.preventDefault();
-    if(name.value === ""){
-        nameError.style.display = "inline"
+    if(nameInput.value.trim() === ""){
+        nameError.innerHTML = "Required";
     }else{
         cardName.innerHTML = name.value;
-        nameError.style.display = "none"
     }
     
     cardNumber.innerHTML = number.value;

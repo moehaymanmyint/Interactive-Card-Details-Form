@@ -14,13 +14,7 @@ let dateError = document.querySelector(".date-error");
 
 function getData(event){
     event.preventDefault();
-    if(name.value === ""){
-        nameError.style.display = "inline"
-    }else{
-        cardName.innerHTML = name.value;
-        nameError.style.display = "none"
-    }
-    
+    cardName.innerHTML = name.value;
     cardNumber.innerHTML = number.value;
     cardMonth.innerHTML = month.value;
     cardYear.innerHTML = year.value;

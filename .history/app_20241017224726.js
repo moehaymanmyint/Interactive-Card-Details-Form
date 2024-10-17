@@ -8,17 +8,16 @@ let number = document.querySelector("#number-input");
 let year = document.querySelector("#year-input");
 let month = document.querySelector("#month-input");
 
-let nameError = document.querySelector(".name-error");
-let numberError = document.querySelector(".number-error");
-let dateError = document.querySelector(".date-error");
+let nameError = document.querySelector("#name-error");
+let numberError = document.querySelector("#number-error");
+let dateError = document.querySelector("#date-error");
 
 function getData(event){
     event.preventDefault();
     if(name.value === ""){
-        nameError.style.display = "inline"
+        nameError.innerHTML = "Required"
     }else{
         cardName.innerHTML = name.value;
-        nameError.style.display = "none"
     }
     
     cardNumber.innerHTML = number.value;

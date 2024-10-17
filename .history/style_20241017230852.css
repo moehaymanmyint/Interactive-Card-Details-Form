@@ -93,9 +93,8 @@
     padding-bottom: 12px;
 }
 
-.name-error{
-    color: red;
-    display: none;
-    font-size: 15px;
+#name-error{
+color: red;
+display: none;
 }
 
