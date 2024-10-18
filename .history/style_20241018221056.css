@@ -2,18 +2,13 @@
 
 body{
     font-family: "Chakra Petch", sans-serif;
-    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
 }
-
 .container{
     display: flex;
     justify-content: center;
-    margin: 10px 100px;
-    padding: 20px 10px;
-    border-radius: 15px;
-    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
-    box-shadow: 0 10px 15px rgba(5, 32, 67, 0.2), 0 -10px 15px rgba(5, 32, 67, 0.1), 
-    10px 0 15px rgba(5, 32, 67, 0.15), -10px 0 15px rgba(5, 32, 67, 0.1);
+    margin: 80px;
+    background-color: skyblue;
+    border-radius: 10px;
 }
 
 .left-container,
@@ -29,8 +24,7 @@ body{
 }
 
 .front-card{
-    background: linear-gradient(135deg, #3b82f6, #1e4b8a, #2563eb, #0ea5e9);
-    box-shadow: 10px 10px 30px rgba(5, 45, 81, 0.5);
+    background-color: rgb(5, 29, 107);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -40,6 +34,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
+    position: relative;
 }
 
 .header{
@@ -64,9 +60,11 @@ body{
 .back-card img{
     width: 400px;
     margin: 20px 40px;
+    margin-top: -25px;
     border-radius: 10px;
     margin-left: 120px;
-    box-shadow: 10px 10px 30px rgba(5, 45, 81, 0.5);
+    z-index: 0;
+    position: relative;
 }
 
 .right-container div{
@@ -105,8 +103,8 @@ body{
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background: linear-gradient(135deg, #3b82f6, #1e4b8a, #2563eb, #0ea5e9);
-    font-size: 25px;
+    background-color: rgb(5, 29, 107);
+    font-size: 20px;
     color: white;
     cursor: pointer;
 }

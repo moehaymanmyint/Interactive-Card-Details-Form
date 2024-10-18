@@ -1,18 +1,15 @@
 let cardName = document.querySelector(".name");
 let cardNumber = document.querySelector(".number");
 let cardDate = document.querySelector(".date");
-let cardCNV = document.querySelector(".cnv");
 
 let name = document.querySelector("#name-input");
 let number = document.querySelector("#number-input");
 let year = document.querySelector("#year-input");
 let month = document.querySelector("#month-input");
-let cnv = document.querySelector("#cnv-input")
 
 let nameError = document.querySelector(".name-error");
 let numberError = document.querySelector(".number-error");
 let dateError = document.querySelector(".date-error");
-let cnvError = document.querySelector(".cnv-error");
 
 function getData(event) {
     event.preventDefault();
@@ -20,10 +17,9 @@ function getData(event) {
     nameError.style.display = "none";
     numberError.style.display = "none";
     dateError.style.display = "none";
-    cnvError.style.display = "none";
 
     // Validate name
-    if (name.value.trim() === "") {
+    if (name.value === "") {
         nameError.style.display = "inline";
         validAll = false;
     }
@@ -44,19 +40,13 @@ function getData(event) {
     if (month.value === "" || year.value === "") {
         dateError.style.display = "inline";
         validAll = false;
-    }else if(month.value < 1 || month.value > 12 || isNaN(Number(month.value)) || isNaN(Number(year.value)) || year.value < currentYear){
+    }else if(month.value < 1 || month.value > 12){
         dateError.style.display = "inline";
-        dateError.innerHTML = "Enter Correct Date*";
+        dateError.innerHTML = "Enter correct Date*";
         validAll = false;
-    }
-
-    // Validate CNV
-    if(cnv.value === ""){
-        cnvError.style.display = "inline";
-        validAll = false;
-    } else if (isNaN(Number(cnv.value)) || cnv.value.length !== 3) {
-        cnvError.style.display = "inline";
-        cnvError.innerHTML = "Enter Correct Number";
+    }else if(year.value > currentYear){
+        dateError.style.display = "inline";
+        dateError.innerHTML = "Enter correct Year*"
         validAll = false;
     }
 
@@ -70,14 +60,7 @@ function getData(event) {
             formatNumber += number.value[i];
         }
         cardNumber.innerHTML = formatNumber;
-
-        if(month.value.length < 2){
-            cardDate.innerHTML = "0" + month.value + "/" + year.value;
-        } else {
-            cardDate.innerHTML = month.value + "/" + year.value;
-        }
-        
-        cardCNV.innerHTML = cnv.value;
+        cardDate.innerHTML = month.value + "/" + year.value;
     }
 }
 

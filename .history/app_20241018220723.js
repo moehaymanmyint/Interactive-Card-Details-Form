@@ -44,7 +44,7 @@ function getData(event) {
     if (month.value === "" || year.value === "") {
         dateError.style.display = "inline";
         validAll = false;
-    }else if(month.value < 1 || month.value > 12 || isNaN(Number(month.value)) || isNaN(Number(year.value)) || year.value < currentYear){
+    }else if(month.value < 1 || month.value > 12 || isNaN(Number(month.value)) || isNaN(Number(year.value)) || year.value > currentYear){
         dateError.style.display = "inline";
         dateError.innerHTML = "Enter Correct Date*";
         validAll = false;
@@ -54,9 +54,9 @@ function getData(event) {
     if(cnv.value === ""){
         cnvError.style.display = "inline";
         validAll = false;
-    } else if (isNaN(Number(cnv.value)) || cnv.value.length !== 3) {
+    } else if (isNaN(Number(cnv.value))) {
         cnvError.style.display = "inline";
-        cnvError.innerHTML = "Enter Correct Number";
+        cnvError.innerHTML = "Enter a number";
         validAll = false;
     }
 

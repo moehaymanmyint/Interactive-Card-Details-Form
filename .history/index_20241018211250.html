@@ -5,24 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Card Details Form</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
-    <h1 style="text-align: center; padding: 20px; font-size: 50px; color: #06234c;">"Create Your Credit Card"</h1>
     <div class="container">
-    <!-- Left Side -->
+        <!-- Left Side -->
     <div class="left-container">
         <div class="front-card">
-            <div class="header">
-                <h3>Credit Card</h3>
-                <div>
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span style="margin-left: 2px;" class="cnv">000</span>
-                </div>
-            </div>
+            <div>Credit Card</div>
             <div class="number" style="text-align: justify; " >0000 0000 0000 0000</div>
             <div class="" style="display: flex; justify-content: space-between;">
-                <span class="name">John</span>
+                <span class="name">Moe</span>
                 <span class="date">
                     <span class="date">00/00</span>
                 </span>
@@ -40,7 +32,7 @@
         <form action="">
             <div class="card-name">
                 <label for="">CardHolder Name</label><br>
-                <input type="text" placeholder="e.g. John Dan" class="card-input" id="name-input">
+                <input type="text" placeholder="e.g. Moe Hay Man Myint" class="card-input" id="name-input">
                 <span class="name-error">Required</span>
             </div>
             <div class="card-number">
@@ -50,15 +42,14 @@
             </div>
             <div class="card-info">
                 <div class="" style="width: 40%;">
-                    <label for="">EXP.Date: MM/YY</label><br>
+                    <label for="">EXP.Date</label><br>
                     <input type="text" placeholder="MM" class="card-date" id="month-input" maxlength="2">
                     <input type="text" placeholder="YY" class="card-date" id="year-input" maxlength="4">    
                     <span class="date-error">Required</span>
                 </div>
                 <div class="cvc" style="width: 60%;">
                     <label for="">CVC</label><br>
-                    <input type="text" placeholder="e.g. 123" class="card-cvc" maxlength="3" minlength="3" id="cnv-input">
-                    <span class="cnv-error">Required</span>
+                    <input type="text" placeholder="e.g. 123" class="card-cvc" maxlength="3">
                 </div>
             </div>
             

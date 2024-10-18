@@ -56,7 +56,7 @@ function getData(event) {
         validAll = false;
     } else if (isNaN(Number(cnv.value)) || cnv.value.length !== 3) {
         cnvError.style.display = "inline";
-        cnvError.innerHTML = "Enter Correct Number";
+        cnvError.innerHTML = "Enter Correct number";
         validAll = false;
     }
 
